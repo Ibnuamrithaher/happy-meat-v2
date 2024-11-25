@@ -1,0 +1,246 @@
+.main{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*  */
+.section{
+    width: 100%;
+}
+
+.section .container{
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+    /* padding: 50px; */
+}
+
+.section .container .row p{
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.container .title{
+    width: 100%;
+    margin-bottom: 50px;
+    /* margin-top: 5%; */
+}
+
+.container .title h1{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.content{
+    float: left;
+    width: 60%;
+}
+
+.image-section{
+    float: left;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+
+.image-responsive{
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+.content .article p{
+    font-size: 17px;
+    line-height: 1.5;
+    margin-left: 20px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+p{
+    text-align: justify;
+}
+
+/* OUR TEAM */
+.section-team {
+    padding-left: 60px;
+    padding-top: 80px;
+    padding-right: 60px;
+    /* padding-bottom: 80px; */
+    display: block;
+    overflow: hidden;
+    background-color: hsl(220, 60%, 95%, 0.2);
+  }
+  
+  .container-team {
+    display: block;
+    padding-left: 30px;
+    padding-top: 5em;
+    padding-right: 30px;
+    padding-bottom: 5em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    max-width: 1160px;
+    position: static;
+  }
+  
+  .heading-section-team {
+    font-size: 40px;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    line-height: 163.2%;
+    margin-bottom: 60px;
+  }
+  
+  .section-team-description {
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    line-height: 163.2%;
+    margin-bottom: 128px;
+  }
+  
+  .section-team-images-description {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: stretch;*/
+    /*padding: 20px;*/
+    flex-wrap: wrap;
+  }
+  
+  .section-team-images-description .col {
+    padding: 0 30px;
+    flex-basis: 25%;
+    text-align: center;
+  }
+  
+  .section-team-images-description .col h4 {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 24px;
+  }
+  
+  .section-team-images-description .col p {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 12px;
+  }
+  
+  .section-team-images-description .col img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 991px) {
+    .section-team-images-description .col {
+      flex-basis: 100%;
+      margin-bottom: 65px;
+    }
+    .section-team-images-description .col:last-child {
+      margin-bottom: 0;
+    }
+    .section-team-images-description .col p {
+      padding: 0;
+    }
+  }
+  
+
+/* Cart */
+.cart-page{
+    width: 80%;
+    margin: 10px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-info p{
+    color: #FC5043;
+}
+.cart-info .info{
+    margin-top: 30px;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #FC5043;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #FC5043;
+    font-size: 12px;
+}
+
+td img{
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #FC5043;
+    width: 100%;
+    /* max-width: 350px; */
+}
+
+.back-btn{
+    background-color: #FC5043;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border-color: #FC5043;
+    border-radius: 5px;
+}
+
+/* Detail Artikel */
+.card-header{
+    background-color: #FC5043; 
+    color: white;
+}
+.card-body{
+    border-color: #FC5043;
+}
+.card-body img{
+    width: auto;
+    height: auto;
+    float: center;
+}

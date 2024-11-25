@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css?family=Mulish:400,700,800,900');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* width: 88%; */
+}
+
+/* NAVBAR */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    height: 85px;
+    font-weight: 700;
+    top: 0px;
+}
+.header li{
+    list-style: none;
+}
+.header-logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 6%;
+} 
+.list-left ul{
+    float: left;
+    margin-top: 28px;
+    padding: 0;
+}
+.list-left li {
+    /* float: left; */
+    display: inline;
+    padding: 20px 35px 20px 0px;
+}
+.list-right ul {
+    float: right;
+    margin-top: 28px;
+    /* display: inline-block; */
+    margin-right: 6%;
+}
+/* .header-left {
+    margin-left: 6%;
+} */
+.list-right li {
+    /* float: right; */
+    display: inline;
+    padding: 20px 10px;
+}
+.header img{
+    position: relative;
+    width: 75%;
+    top: -18px;
+}
+.header a{
+    text-decoration: none;
+    color: #6D7D8B;
+    font-size: 15px;
+}
+.checkbtn{
+    font-size: 28px;
+    font-weight: 700;
+    color: #FC5043;
+    float: right;
+    line-height: 85px;
+    margin-right: 8%;
+    display: none;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    .header ul li a{
+        font-size: 14px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .header-logo{
+        margin-top: 12px;
+    }
+    .list-left ul{
+        top: 55px;
+        padding-top: 35px;
+    }
+    .list-right ul{
+        top: 420px;
+        font-weight: 800;
+    }
+    .header ul{
+        left: -100%;
+        background: #EBF0FA;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        transition: all .5s;
+        text-align: center;
+    }
+    /* .header ul{
+        left: -100%;
+        transition: all .5s;
+    } */
+    #check:checked ~ .header-list ul{
+        left: 0;
+    }
+    /* #check:checked ~ .list-left ul{
+        left: 0;
+    } */
+    .header ul li{
+        display: block;
+    }
+    .list-left ul li{
+        padding-right: 0;
+    }
+    .list-right ul li{
+        padding-left: 0;
+        margin-right: 27px;
+    }
+    .header ul li a{
+        color: #595668;
+        font-size: 18px;
+        opacity: 0.7;
+    }
+    .list-right ul li a{
+        color: #FC5043;
+    }
+    .header ul li a:hover{
+        opacity: 1;
+    }
+    .list-right{
+        position: absolute;
+    }
+    .li-btn{
+        display: block;
+        width: 100%;
+    }
+    .logout-btn{
+        margin-top: 5px;
+        margin-left: 28px;
+    }
+}
+
+/* LOGIN */
+.main{
+    padding: 100px 6%;
+    color: #6D7D8B;
+}
+.container {
+    padding: 0% 6%;
+}
+.img-login{
+    position: absolute;
+    width: 52%;
+    left: 9.5%;
+    top: 30%;
+}
+.login{
+    position: relative;
+    background-color: #EBF0FA;
+    padding: 5% 5% 8% 5%;
+    text-align: center;
+    color: #6D7D8B;
+    border-radius: 12px;
+    float: right;
+    margin-top: 20px;
+    /* right: -5%; */
+    margin-bottom: 10%;
+}
+.box-login{
+    text-align: left;
+    margin-top: 20px;
+}
+.login-part small{
+    text-align: left;
+}
+.login-title{
+    color: #FC5043;
+    margin-bottom: 40px;
+}
+.login-part .login-btn{
+    background-color: #FC5043;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+}
+.login-part .signup-btn, .acc-btn:hover{
+    background-color: #fff;
+    color: #FC5043;
+    border: #FC5043 2px solid;
+    /* margin-bottom: 70px; */
+    font-size: 14px;
+    font-weight: 800;
+    height: 40px;
+}
+.login-part input{
+    border: #BBC8D4 2px solid;
+    height: 52px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+::placeholder {
+    font-size: 14px;
+}
+.login-part p{
+    font-size: 13px;
+    color: black;
+    margin: 25px 0px 0px 0px;
+}
+
+/* USER PROFILE - MY ACCOUNT */
+.profile{
+    float: left;
+    color: #6D7D8B;
+    border: 1px solid #FC5043;
+    border-radius: 8px;
+    margin-top: 2.5%;
+    padding: 1%;
+    margin-bottom: 10%;
+    font-weight: 700;
+}
+.profile-photo img{
+    position: relative;
+    float: left;
+    width: 22%;
+    clip-path: circle();
+}
+.profile-name{
+    margin: 20px 0px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.profil-saya{
+    font-size: 28px;
+    font-weight: 700;
+}
+.user-name{
+    font-size: 18px;
+    padding-top:4%;
+    font-weight: 700;
+}
+.profile-title{
+    font-size: 14px;
+    padding: 5% 5% 3% 5%;
+}
+.profile-title .active{
+    color: #FC5043;
+    font-weight: 800;
+}
+.profile-title p{
+    margin-bottom: 7%;
+    border-bottom: 2px solid #EBF0FA;
+}
+.profile-title a{
+    text-decoration: none;
+    color: #6D7D8B;
+}
+.profile-title .title:hover{
+    color: #3A353F;
+}
+
+.my-account{
+    position: relative;
+    padding: 60px 65px;
+    text-align: center;
+    background-color: #EBF0FA;
+    color: #6D7D8B;
+    float: right;
+    margin: 2.5% 0% 10% 0%;
+    font-weight: 700;
+    /* right: -5%; */
+}
+.box-account{
+    text-align: left;
+    font-weight: 700;
+    /* margin: 5% 0%; */
+}
+.acc-btn{
+    background-color: #FC5043;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+}
+.account-part input{
+    border: #BBC8D4 2px solid;
+    height: 48px;
+    border-radius: 4px;
+    margin-bottom: 5%;
+    font-size: 14px;
+    color: #6D7D8B;
+    font-weight: 700;
+}
+.account-part textarea{
+    border: #BBC8D4 2px solid;
+    border-radius: 4px;
+    margin-bottom: 5%;
+    font-size: 14px;
+    color: #6D7D8B;
+    font-weight: 700;
+}
+
+/* USER PROFILE - MY ORDER */
+.order{
+    float: right;
+    margin: 2.5% 0% 0% 0%;
+    padding-left: 4%;
+}
+.order table{
+    width: 105%;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid #C4C4C4;
+    margin: 3% 0% 10% 0%;
+}
+.order th{
+    color: #595668;
+    height: 50px;
+}
+.order tr{
+    height: 35px;
+}
+.order .detail-btn{
+    text-decoration: none;
+    border: 2px solid #FC5043;
+    padding: 1% 3.5%;
+    border-radius: 15%;
+    color: #FC5043;
+    font-weight: 700;
+}
+.order h4{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+}
+.order .detail-btn:hover{
+    padding: 1% 3.5%;
+    border-radius: 15%;
+    color: white;   
+    background-color: #FC5043;
+}
+
+/* DETAIL PRODUCT */
+.product-part{
+    padding: 0;
+}
+.detail-product{
+    position: absolute;
+    border: #94A3B1 2px solid;
+    border-radius: 20px;
+    margin: 3% 0px;
+    /* padding-left: 10%; */
+}
+.foto-product{
+    float: left;
+    margin: 5% 0% 5% 1%;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.desc-product{
+    float: right;
+    margin: 6% 0%;
+    padding: 0% 5%;
+}
+.desc-product a{
+    text-decoration: none;
+    color: #94A3B1;
+}
+.desc-product h4{
+    font-size: 17px;
+    margin: -1.5% 0% 6% 0%;
+    font-weight: 800;
+}
+.desc-product h2{
+    font-weight: 800;
+    color: #595668;
+}
+.desc-product a:hover{
+    color: #595668;
+}
+.desc-product h5{
+    font-size: 16px;
+    margin-bottom: 12%;
+    color: #FC5043;
+}
+.desc-product p{
+    font-size: 14px;
+    color: #6D7D8B;
+}
+.desc-product button{
+    width: 100%;
+    background-color: #FC5043;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    margin-top: 8%;
+}
+.desc-product button:hover{
+    background-color: white;
+    color: #FC5043;
+    border: #FC5043 2px solid;
+    font-weight: 800;
+}
+button:focus{
+    outline: none;
+}
+
+/* DETAIL ORDER */
+.detail-order{
+    position: absolute;
+    border: #94A3B1 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2% 6%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 2%;
+}
+.detail-order-title{
+    text-align: center;
+    color: #3A353F;
+    font-weight: 800;
+}
+.detail-order h5{
+    font-size: 20px;
+    color: #595668;
+    font-weight: 800;
+}
+.detail-order p{
+    font-size: 14px;
+    color: #6D7D8B;
+}
+.order-content{
+    margin-top: 5%;
+    padding-top: 1%;
+}
+.detail-order button{
+    width: 100%;
+    background-color: #FC5043;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    margin: 8% 0%;
+}
+.detail-order button:hover{
+    background-color: #fff;
+    color: #FC5043;
+    border: #FC5043 2px solid;
+    /* margin-bottom: 70px; */
+    font-size: 16px;
+    font-weight: 800;
+    height: 38px;
+}
+
+/* FOOTER */
+.footer .container {
+  max-width: 1170px;
+  margin: auto;
+  width: 100%;
+}
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer ul {
+  list-style: none;
+}
+.footer {
+  background-color: hsl(220, 60%, 95%);
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #171414;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  font-size: 21px;
+  font-family: "Mulish", sans-serif;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #fc5043;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.text-block-2 {
+  font-size: 12px;
+  font-family: "Mulish", sans-serif;
+}
+
+.footer-col ul li a {
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #828282;
+  display: block;
+  transition: all 0.3s ease;
+  font-family: "Mulish", sans-serif;
+}
+.footer-col ul li a:hover {
+  color: #1e71ff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(12, 15, 20, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.logo-footer {
+  background-image: url(../image/logo_meat.png);
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 40px;
+  background-size: cover;
+  background-position: 50% 50%;
+}

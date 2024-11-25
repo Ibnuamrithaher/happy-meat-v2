@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Mulish:400,700,800,900');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* width: 88%; */
+}
+
+/* NAVBAR */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    height: 85px;
+    font-weight: 700;
+    top: 0px;
+}
+.header li{
+    list-style: none;
+}
+.header-logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 6%;
+} 
+.list-left ul{
+    float: left;
+    margin-top: 28px;
+    padding: 0;
+}
+.list-left li {
+    /* float: left; */
+    display: inline;
+    padding: 20px 35px 20px 0px;
+}
+.list-right ul {
+    float: right;
+    margin-top: 28px;
+    /* display: inline-block; */
+    margin-right: 6%;
+}
+/* .header-left {
+    margin-left: 6%;
+} */
+.list-right li {
+    /* float: right; */
+    display: inline;
+    padding: 20px 10px;
+}
+.header img{
+    position: relative;
+    width: 75%;
+    top: -18px;
+}
+.header a{
+    text-decoration: none;
+    color: #6D7D8B;
+    font-size: 15px;
+}
+.checkbtn{
+    font-size: 28px;
+    font-weight: 700;
+    color: #FC5043;
+    float: right;
+    line-height: 85px;
+    margin-right: 8%;
+    display: none;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    .header ul li a{
+        font-size: 14px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .header-logo{
+        margin-top: 12px;
+    }
+    .list-left ul{
+        top: 55px;
+        padding-top: 35px;
+    }
+    .list-right ul{
+        top: 420px;
+        font-weight: 800;
+    }
+    .header ul{
+        left: -100%;
+        background: #EBF0FA;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        transition: all .5s;
+        text-align: center;
+    }
+    /* .header ul{
+        left: -100%;
+        transition: all .5s;
+    } */
+    #check:checked ~ .header-list ul{
+        left: 0;
+    }
+    /* #check:checked ~ .list-left ul{
+        left: 0;
+    } */
+    .header ul li{
+        display: block;
+    }
+    .list-left ul li{
+        padding-right: 0;
+    }
+    .list-right ul li{
+        padding-left: 0;
+        margin-right: -10px;
+    }
+    .header ul li a{
+        color: #595668;
+        font-size: 18px;
+        opacity: 0.7;
+    }
+    .list-right ul li a{
+        color: #FC5043;
+    }
+    .header ul li a:hover{
+        opacity: 1;
+    }
+    .list-right{
+        position: absolute;
+    }
+    .li-btn{
+        display: block;
+        width: 100%;
+    }
+    .logout-btn{
+        margin-top: 5px;
+        margin-left: -8px;
+    }
+}
